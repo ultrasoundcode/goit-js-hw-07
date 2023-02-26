@@ -1,5 +1,5 @@
 import { galleryItems } from './gallery-items.js';
-// Change code below this line
+
 const galleryContainer = document.querySelector('.gallery');
 const galleryMurkUp = createGallery(galleryItems);
 galleryContainer.insertAdjacentHTML('beforeend', galleryMurkUp);
@@ -25,7 +25,7 @@ function onClickImg(evt) {
 
   instance.show();
 
-  galleryContainer.addEventListener('keydown', (evt) => {
+  galleryContainer.addEventListener('keydown', evt => {
     if (evt.code === 'Escape') instance.close();
   });
 }
