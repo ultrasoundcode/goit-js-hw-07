@@ -16,7 +16,6 @@ function createGallery(galleryItems) {
 							</div>`;
     })
     .join('');
-  return murkup;
 }
 function onClickImg(evt) {
   evt.preventDefault();
